@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.version          = '4.68'
   s.summary          = 'BaiduMobAdSDK'
   s.description      = <<-DESC
-  百度移动广告SDK(百青藤)，将具有强竞争力的百度推广内容精准投放到媒体相应位置，为推广客户和流量主提供优质回报
+  百度移动广告SDK(百青藤);
+  http://union.baidu.com/bqt/appco.html#/union/download/sdk
                        DESC
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -23,8 +24,8 @@ Pod::Spec.new do |s|
   s.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   s.libraries        = 'c++'
 
-  s.vendored_frameworks = 'Frameworks/BaiduMobAdSDK.framework'
-  s.resources = ['Frameworks/*.{bundle}']
+  s.vendored_frameworks = 'SDK/BaiduMobAdSDK.framework'
+  s.resources = ['SDK/*.{bundle}']
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
     'VALID_ARCHS' =>  valid_archs.join(' '),
