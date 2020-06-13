@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
   s.platform         = :ios, "9.0"  
   s.frameworks       = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   s.libraries        = 'c++'
-
+  s.weak_frameworks = "WebKit"
+  
   s.vendored_frameworks = 'SDK/BaiduMobAdSDK.framework'
   s.resources = ['SDK/*.{bundle}']
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
