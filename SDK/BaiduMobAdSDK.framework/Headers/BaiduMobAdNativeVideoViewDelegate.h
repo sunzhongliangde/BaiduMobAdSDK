@@ -19,6 +19,13 @@
 - (void)nativeVideoAdDidStartPlaying:(BaiduMobAdNativeVideoView *)videoView;
 
 /**
+ 视频暂停播放
+ 
+ @param videoView self
+ */
+- (void)nativeVideoAdDidPause:(BaiduMobAdNativeVideoView *)videoView;
+
+/**
  视频重播
  
  @param videoView self

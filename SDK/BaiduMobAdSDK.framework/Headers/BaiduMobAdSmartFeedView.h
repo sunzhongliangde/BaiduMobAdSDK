@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaiduMobAdNativeAdObject.h"
 #import "BaiduMobAdCommonConfig.h"
 
+@class BaiduMobAdNativeAdObject;
 @interface BaiduMobAdSmartFeedView : UIView
 
 /**

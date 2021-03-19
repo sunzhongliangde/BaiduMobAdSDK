@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaiduMobAdCommonConfig.h"
+#import <AVFoundation/AVFoundation.h>
 
 @class BaiduMobAdVideoView;
 @protocol BaiduMobAdVideoViewDelegate <NSObject>
@@ -19,6 +20,13 @@
  @param videoView self
  */
 - (void)fullscreenVideoAdDidStartPlaying:(BaiduMobAdVideoView *)videoView;
+
+/**
+ 视频暂停播放
+ 
+ @param videoView self
+ */
+- (void)fullscreenVideoAdDidPause:(BaiduMobAdVideoView *)videoView;
 
 /**
  视频重播
@@ -69,6 +77,11 @@
 - (instancetype)initWithFrame:(CGRect)frame andObject:(id)object;
 
 /**
+ 设置AVAudioSessionCategory，play之前调用，默认：AVAudioSessionCategoryAmbient
+ */
+- (void)setAudioSessionCategory:(AVAudioSessionCategory)category;
+
+/**
  开始播放
  */
 - (void)play;
@@ -87,6 +100,18 @@
  销毁播放器
  */
 - (void)stop;
+
+/**
+ 设置默认封面图背景样式，默认显示浅色，请在play前调用
+ */
+- (void)setFrontPostViewWithPic:(BaiduMobAdVideoFrontPictureType)type;
+
+/**
+ 设置隐藏暂停按钮，默认显示，请在play前调用
+ 
+ @param hidden YES隐藏  NO显示
+ */
+- (void)hidePauseButton:(BOOL)hidden;
 
 /**
  设置静音

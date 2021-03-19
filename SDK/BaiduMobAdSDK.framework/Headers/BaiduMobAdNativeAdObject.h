@@ -126,4 +126,9 @@
  */
 - (void)handleClick:(UIView *)view;
 
+/**
+ * 百度联盟官网logo点击
+ */
+- (void)baiduLogoClick:(UIView *)baiduLogoView;
+
 @end

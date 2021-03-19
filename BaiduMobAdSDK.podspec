@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaiduMobAdSDK'
-  s.version          = '4.69'
+  s.version          = '4.75'
   s.summary          = 'BaiduMobAdSDK'
   s.description      = <<-DESC
   百度移动广告SDK(百青藤);
